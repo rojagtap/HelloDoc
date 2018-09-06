@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.axiomcorp.hellodoc">
+
+    <supports-screens
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:anyDensity="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".StartActivity" />
+        <activity
+            android:name=".HeadacheActivity"
+            android:label="@string/headache_opt" />
+        <activity
+            android:name=".CutActivity"
+            android:label="@string/cuts_opt" />
+        <activity
+            android:name=".FeverActivity"
+            android:label="@string/fever_opt" />
+        <activity android:name=".YesNoActivity" />
+        <activity
+            android:name=".DActivity"
+            android:label="@string/tired_opt" />
+        <activity
+            android:name=".StomachacheActivity"
+            android:label="@string/stomachache_opt" />
+        <activity android:name=".FinalActivity" />
+        <activity android:name=".ToDoctor" />
+        <activity
+            android:name=".AboutActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+    </application>
+
+</manifest>

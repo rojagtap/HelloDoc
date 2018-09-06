@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/StomachAcheScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgimg"
+    tools:context="com.axiomcorp.hellodoc.StomachacheActivity"
+    tools:targetApi="ice_cream_sandwich">
+
+    <Button
+        android:id="@+id/BActStomachache"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RadioGroupStomachache"
+        android:layout_alignParentBottom="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/nextButton"
+        android:onClick="goNext" />
+
+    <TextView
+        android:id="@+id/QuestionStomachache"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/being_specific_prompt"
+        android:textSize="30sp"
+        android:textColor="#FF000000"/>
+
+    <RadioGroup
+        android:id="@+id/RadioGroupStomachache"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <RadioButton
+            android:id="@+id/optAcidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/acidity_opt"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/optVomit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/vomiting_opt"
+            android:textSize="30sp"/>
+
+    </RadioGroup>
+
+</RelativeLayout>

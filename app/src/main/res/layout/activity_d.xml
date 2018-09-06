@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgimg"
+    tools:context="com.axiomcorp.hellodoc.DActivity"
+    tools:targetApi="ice_cream_sandwich">
+
+    <Button
+        android:id="@+id/BActD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RadioGroupD"
+        android:layout_alignParentBottom="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/nextButton"
+        android:onClick="goNext" />
+
+    <TextView
+        android:id="@+id/QuestionD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/and_prompt"
+        android:textSize="30sp"
+        android:textColor="#FF000000"/>
+
+    <RadioGroup
+        android:id="@+id/RadioGroupD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <RadioButton
+            android:id="@+id/optDryMouth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dry_mouth_opt"
+            android:textSize="30sp"/>
+
+        <RadioButton
+            android:id="@+id/optStomach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/stomachache_opt"
+            android:textSize="30sp"/>
+
+    </RadioGroup>
+
+</RelativeLayout>

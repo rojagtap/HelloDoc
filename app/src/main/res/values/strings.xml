@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Hello Doc!</string>
+    <string name="nextButton">Next</string>
+    <string name="cuts_opt">Got Cuts/Wounds</string>
+    <string name="headache_opt">Headache</string>
+    <string name="start_prompt">How are you feeling?</string>
+    <string name="body_pain_opt">Headache &amp; Body Pain</string>
+    <string name="fever_opt">Headache &amp; Fever</string>
+    <string name="just_headache_opt">Just Headache</string>
+    <string name="second_prompt">is it just Headache or&#8230;</string>
+    <string name="fever_continuous_opt">Fever since long time</string>
+    <string name="fever_normal_opt">Normal Fever</string>
+    <string name="being_specific_prompt">to be more specific&#8230;</string>
+    <string name="cut_metal_opt">Cut by a metal</string>
+    <string name="cut_normal_opt">Normal Cut</string>
+    <string name="only_fever_opt">Fever</string>
+    <string name="rashes_opt">Red rashes all over</string>
+    <string name="cough_opt">Cough</string>
+    <string name="tired_opt">Tired</string>
+    <string name="toothache_opt">Toothache</string>
+    <string name="stomachache_opt">Stomach ache</string>
+    <string name="diagnosis_prompt">
+        This seems something different.\nLooks like you need to be diagnosed in person.\nPlease visit your doctor for further healthcare.
+    </string>
+    <string name="deep_wound_opt">Deep Wound</string>
+    <string name="no_opt">No</string>
+    <string name="yes_opt">Yes</string>
+    <string name="and_prompt">and&#8230;?</string>
+    <string name="dry_mouth_opt">Dried Mouth</string>
+    <string name="acidity_opt">Acidity</string>
+    <string name="vomiting_opt">Vomiting</string>
+    <string name="enter_name">Please enter your name and age for better interaction.</string>
+    <string name="name_text">Name</string>
+    <string name="age_text">Age</string>
+    <string name="policy">This is a First Aid healthcare assistant app. We suggest you medications in accordance to how you are feeling. We compare your illness with a variety of illnesses and suggest you the most popular and easily available medicine, so they do not cause side effects to most of the people. Do not use this diagnosis for kids of age less than 5 years. Also if you experience different symptoms after having the medications, rush to a Doctor to treat the side effects. \n \nGet Well Soon!</string>
+    <string name="about_opt">About</string>
+    <string name="get_started_opt">Get started</string>
+    <string name="greetings_prompt">Hi! I am your personal healthcare assistant. Before you start, I suggest you to read the ABOUT section to get a better understanding of how exactly the app works.</string>
+</resources>

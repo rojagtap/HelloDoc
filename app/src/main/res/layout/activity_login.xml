@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LoginScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.axiomcorp.hellodoc.LoginActivity"
+    tools:targetApi="ice_cream_sandwich">
+
+    <TextView
+        android:id="@+id/promptGreetings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/promptName"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="20sp"
+        android:textColor="#FF000000"
+        android:text="@string/greetings_prompt"/>
+
+    <TextView
+        android:id="@+id/promptName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20sp"
+        android:textColor="#FF000000"
+        android:text="@string/enter_name"/>
+
+    <EditText
+        android:id="@+id/optName"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/promptName"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPersonName"
+        android:background="#FFFFFFFF"
+        android:hint="@string/name_text"/>
+
+    <EditText
+        android:id="@+id/optAge"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/optName"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@+id/optName"
+        android:layout_alignLeft="@+id/optName"
+        android:inputType="number"
+        android:background="#FFFFFFFF"
+        android:hint="@string/age_text"/>
+
+    <Button
+        android:id="@+id/optStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/optAge"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:text="@string/get_started_opt"
+        android:onClick="goNext"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/optStart"
+        android:layout_toEndOf="@+id/optStart"
+        android:layout_toRightOf="@+id/optStart"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="@string/about_opt"
+        android:onClick="goAbout"/>
+
+
+</RelativeLayout>

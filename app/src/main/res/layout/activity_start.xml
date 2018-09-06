@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/startScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgimg"
+    tools:context="com.axiomcorp.hellodoc.StartActivity"
+    tools:targetApi="ice_cream_sandwich">
+
+    <Button
+        android:id="@+id/BAct1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RadioGroup1"
+        android:layout_alignParentBottom="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/nextButton"
+        android:onClick="goNext" />
+
+    <TextView
+        android:id="@+id/Question1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/start_prompt"
+        android:textSize="30sp"
+        android:textColor="#FF000000" />
+
+    <RadioGroup
+        android:id="@+id/RadioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Question1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp">
+
+        <RadioButton
+            android:id="@+id/optHeadache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/headache_opt"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/optCut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/cuts_opt"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/optFever"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/only_fever_opt"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/optCough"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/cough_opt"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/optTired"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/tired_opt"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/optStomachache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/stomachache_opt"
+            android:textSize="30sp"/>
+
+        <RadioButton
+            android:id="@+id/optToothache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/toothache_opt"
+            android:textSize="30sp" />
+
+    </RadioGroup>
+
+</RelativeLayout>

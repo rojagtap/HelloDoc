@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cutScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgimg"
+    tools:context="com.axiomcorp.hellodoc.CutActivity"
+    tools:targetApi="ice_cream_sandwich">
+
+    <Button
+        android:id="@+id/BAct2_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RadioGroup2_2"
+        android:layout_alignParentBottom="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/nextButton"
+        android:onClick="goNext" />
+
+    <TextView
+        android:id="@+id/Question2_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/being_specific_prompt"
+        android:textSize="30sp"
+        android:textColor="#FF000000" />
+
+    <RadioGroup
+        android:id="@+id/RadioGroup2_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Question2_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp">
+
+        <RadioButton
+            android:id="@+id/optNormalCut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cut_normal_opt"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/optMetallic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/cut_metal_opt"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/optDeepWound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/deep_wound_opt"
+            android:textSize="30sp" />
+
+    </RadioGroup>
+
+</RelativeLayout>
